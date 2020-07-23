@@ -125,5 +125,5 @@ function DOTAHero(name, role, type){
     this.type = type
 }
 
-let Axe = new DOTAHero('Axe', 'Tank', 'Physical Damage')
+let Axe = new DOTAHero('Axe', 'Tank', 'Strength')
 console.log(Axe)
