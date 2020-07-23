@@ -115,9 +115,10 @@ function BESTRapper(name, label, goodRapper ){
 }
 
 let tupacShakur = new BESTRapper('Tupac Amaru Shakur', 'Death Row', true)
-
+let nipsey = new BESTRapper('Nipsey Hussle', 'All Money In', true)
 console.log(tupacShakur)
 console.log(tupacShakur.name)
+console.log(nipsey)
 
 function DOTAHero(name, role, type){
     this.name = name
@@ -125,5 +126,7 @@ function DOTAHero(name, role, type){
     this.type = type
 }
 
-let Axe = new DOTAHero('Axe', 'Tank', 'Strength')
-console.log(Axe)
+let axe = new DOTAHero('Axe', 'Tank', 'Strength')
+let invoker = new DOTAHero('Invoker', 'Disabler', 'Intellect')
+console.log(axe)
+console.log(invoker)
