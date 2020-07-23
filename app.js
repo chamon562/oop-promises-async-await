@@ -159,16 +159,16 @@ class Car {
     //drive is seperate function outside of that
     //make method drive invoke
     drive(){
-        console.log('Vroom')
+        // console.log('Vroom')
     }
     intro(){
-        console.log('This car is a ' + this.make + ' ' + this.model)
+        // console.log('This car is a ' + this.make + ' ' + this.model)
     }
 
 }
 
 let tesla = new Car('2020', 'Tesla', 'Model S', 'red')
-console.log(tesla)
+// console.log(tesla)
 tesla.drive()
 tesla.intro()
 
@@ -226,3 +226,63 @@ fetch('https://api.github.com/users/Lizzwest')
     console.log(lizz)
     lizz.intro()
 })
+//ismomhappy in order to see if happen console willigetnewphone
+let isMomHappy = true;
+
+// Promise
+
+//if true does this
+// let willIGetNewPhone = new Promise(
+//     function (resolve, reject) {
+//         if (isMomHappy) {
+//             let phone = {
+//                 brand: 'Samsung',
+//                 color: 'black'
+//             };
+//             resolve(phone); // fulfilled
+
+// let willIGetNewPhone = new Promise(
+//     function (resolve, reject) {
+//         if (isMomHappy) {
+//             let phone = {
+//                 brand: 'Samsung',
+//                 color: 'black'
+//             };
+//             resolve(phone); // fulfilled
+//             //if false we purposely created error and this goes through
+//         } else {
+//             // let reason = new Error('mom is not happy');
+//             reject('Momma ant happy'); // reject
+//         }
+
+//     }
+// );
+
+let willIGetNewPhone = Promise((resolve, reject) =>{
+    if (isMomHappy){
+        const phone = {
+            brand: 'iphone',
+            color: 'red'
+        }
+        //promise u someting back or jrect
+        resolve(phone)
+    }
+    else{
+        reject('no Phone')
+    }
+})
+
+// console.log(willIGetNewPhone)
+//.then comes form our fetch call
+//.then return result from this() placeholder result
+willIGetNewPhone.then(result => {
+    console.log(result)
+})
+
+//made function which was promise
+//said if this is then resolve withthis
+//other wise reject and resolve with this
+
+//check by whatever.then(result =>{
+//     console.log(result)
+// })
